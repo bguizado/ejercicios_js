@@ -3,17 +3,24 @@
 // Luego, utiliza el método reduce para calcular el precio total de todos los productos en stock.
 
 let arrayProduct = [
-    { sku: "Mayonesa 10gr", Precio: 1.99, stock: 10 },
-    { sku: "Ketchup 10gr", precio: 0.99, stock: 7 },
-    { sku: "Mostaza 10gr", precio: 0.49, stock: 13 },
-    { sku: "Aji 10gr", precio: 0.79, stock: 0 },
-    { sku: "Relish 10gr", precio: 3.29, stock: 1 },
-    { sku: "Golf 10gr", precio: 1.49, stock: 0 },
-    { sku: "Tartara 10gr", precio: 2.69, stock: 8 }
+    { sku: "Mayonesa 10gr", precio: 1.99, stock: true },
+    { sku: "Ketchup 10gr", precio: 0.99, stock: true },
+    { sku: "Mostaza 10gr", precio: 0.49, stock: true },
+    { sku: "Aji 10gr", precio: 0.79, stock: false },
+    { sku: "Relish 10gr", precio: 3.29, stock: true },
+    { sku: "Golf 10gr", precio: 1.49, stock: false },
+    { sku: "Tartara 10gr", precio: 2.69, stock: true }
   ];
 
-  let arrayProductConStock = arrayProduct.filter( stock => {
-    return stock > 0
-  })
+let arrayProductConStock = arrayProduct.filter( product => {
+    return product.stock === true
+    }
+  );
 
-  console.log(arrayProductConStock)
+let arraySumaProductConStock = arrayProductConStock.reduce((total, product) => {
+    return total + product.precio;
+}, 0);
+
+
+console.log(arrayProductConStock);
+console.log(arraySumaProductConStock);
