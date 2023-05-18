@@ -1,7 +1,13 @@
-// Dado un arreglo de palabras, utiliza el método map para crear un nuevo arreglo que contenga la primera letra de cada palabra.
+// Crea una función llamada esPar que tome un número como argumento y devuelva true si el número es par, y false si no lo es.
 
-const array = ["manzana", "pera", "banana", "naranja", "sandía"];
-
-const primerasLetras = array.map(palabra => palabra.charAt(0));
-
-console.log(primerasLetras);
+function esPar(numero) {
+    if (numero % 2 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  console.log(esPar(4));  // Devuelve true
+  console.log(esPar(7));  // Devuelve false
+  
