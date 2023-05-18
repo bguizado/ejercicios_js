@@ -1,7 +1,9 @@
-// Dado un arreglo de palabras, utiliza el método map para crear un nuevo arreglo que contenga la primera letra de cada palabra.
+// Crea una función llamada saludar que tome un nombre como argumento y devuelva un mensaje de saludo, por ejemplo: "¡Hola, [nombre]!"
 
-const array = ["manzana", "pera", "banana", "naranja", "sandía"];
-
-const primerasLetras = array.map(palabra => palabra.charAt(0));
-
-console.log(primerasLetras);
+function saludar(nombre) {
+    return `¡Hola, ${nombre}!`;
+  }
+  
+  const nombre = "Juan";
+  const mensajeSaludo = saludar(nombre);
+  console.log(mensajeSaludo);
