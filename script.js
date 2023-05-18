@@ -1,7 +1,8 @@
-// Dado un arreglo de palabras, utiliza el método map para crear un nuevo arreglo que contenga la primera letra de cada palabra.
+// Crea una función anónima que tome dos números como argumentos y devuelva su suma.
 
-const array = ["manzana", "pera", "banana", "naranja", "sandía"];
-
-const primerasLetras = array.map(palabra => palabra.charAt(0));
-
-console.log(primerasLetras);
+const suma = (num1, num2) => {
+    return num1 + num2;
+  };
+  
+  const resultado = suma(5, 3);
+  console.log(resultado);
