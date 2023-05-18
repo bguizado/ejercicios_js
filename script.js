@@ -1,7 +1,6 @@
-// Dado un arreglo de palabras, utiliza el método map para crear un nuevo arreglo que contenga la primera letra de cada palabra.
+// Convierte la función esPar en una función flecha.
 
-const array = ["manzana", "pera", "banana", "naranja", "sandía"];
+const esPar = numero => numero % 2 === 0;
 
-const primerasLetras = array.map(palabra => palabra.charAt(0));
-
-console.log(primerasLetras);
+console.log(esPar(4));
+console.log(esPar(7)); 
