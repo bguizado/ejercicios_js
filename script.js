@@ -1,7 +1,9 @@
-// Dado un arreglo de palabras, utiliza el método map para crear un nuevo arreglo que contenga la primera letra de cada palabra.
+// Crea una función anónima que tome un arreglo de palabras como argumento y devuelva un nuevo arreglo con la longitud de cada palabra.
 
-const array = ["manzana", "pera", "banana", "naranja", "sandía"];
+const palabras = ["Hola", "mundo", "javascript", "programación", "desarrollo"];
 
-const primerasLetras = array.map(palabra => palabra.charAt(0));
+const longitudPalabras = palabras.map(function(palabra) {
+  return palabra.length;
+});
 
-console.log(primerasLetras);
+console.log(longitudPalabras);
