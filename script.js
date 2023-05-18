@@ -1,7 +1,9 @@
-// Dado un arreglo de palabras, utiliza el método map para crear un nuevo arreglo que contenga la primera letra de cada palabra.
+// Dado un arreglo de palabras, utiliza el método reduce para concatenar todas las palabras en una sola cadena.
 
-const array = ["manzana", "pera", "banana", "naranja", "sandía"];
+const palabras = ["Hola", "mundo", "desde", "JavaScript"];
 
-const primerasLetras = array.map(palabra => palabra.charAt(0));
+const cadenaConcatenada = palabras.reduce((acumulador, palabra) => {
+  return acumulador + palabra;
+}, "");
 
-console.log(primerasLetras);
+console.log(cadenaConcatenada);
