@@ -1,7 +1,7 @@
-// Dado un arreglo de palabras, utiliza el método map para crear un nuevo arreglo que contenga la primera letra de cada palabra.
+// Convierte la función saludar en una función flecha.
 
-const array = ["manzana", "pera", "banana", "naranja", "sandía"];
+const saludar = nombre => `¡Hola, ${nombre}!`;
 
-const primerasLetras = array.map(palabra => palabra.charAt(0));
-
-console.log(primerasLetras);
+const nombre = "Juan";
+const mensajeSaludo = saludar(nombre);
+console.log(mensajeSaludo);
