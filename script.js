@@ -1,7 +1,7 @@
-// Dado un arreglo de palabras, utiliza el método map para crear un nuevo arreglo que contenga la primera letra de cada palabra.
+// Dado un arreglo de números, utiliza el método filter para crear un nuevo arreglo que contenga solo los números divisibles por 3.
 
-const array = ["manzana", "pera", "banana", "naranja", "sandía"];
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const primerasLetras = array.map(palabra => palabra.charAt(0));
+const divisiblesPor3 = numeros.filter(numero => numero % 3 === 0);
 
-console.log(primerasLetras);
+console.log(divisiblesPor3);
