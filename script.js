@@ -1,7 +1,11 @@
-// Dado un arreglo de palabras, utiliza el método map para crear un nuevo arreglo que contenga la primera letra de cada palabra.
+// Dado un arreglo de números, utiliza el método filter para crear un nuevo arreglo que contenga solo los números positivos. 
+// Luego, utiliza el método reduce para calcular la suma de los números seleccionados.
 
-const array = ["manzana", "pera", "banana", "naranja", "sandía"];
+const numeros = [-3, 5, -2, 10, -8, 4, 7, -1];
 
-const primerasLetras = array.map(palabra => palabra.charAt(0));
+const numerosPositivos = numeros.filter(numero => numero > 0);
 
-console.log(primerasLetras);
+const sumaNumerosPositivos = numerosPositivos.reduce((acumulador, numero) => acumulador + numero, 0);
+
+console.log(numerosPositivos);
+console.log(sumaNumerosPositivos);
